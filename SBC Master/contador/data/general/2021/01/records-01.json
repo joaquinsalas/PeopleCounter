@@ -1,0 +1,11 @@
+{
+	"cols":[
+		{"label":"Fecha","type":"date"},
+		{"label":"Entradas","type":"number"},
+		{"label":"Salidas","type":"number"}
+		],
+	"rows":[
+		{"c":[{"v":"Date(2021,0,1,14,40,38)"},{"v":0},{"v":1}]},
+		{"c":[{"v":"Date(2021,0,1,14,44,18)"},{"v":1},{"v":0}]}
+		]
+}
