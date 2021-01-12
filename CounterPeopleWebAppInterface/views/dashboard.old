@@ -1,0 +1,78 @@
+<script src="js/liveEntries.js"></script>
+<script src="js/chart.js"></script>
+
+<main class="main" id="dashboard">
+	<div id="top-cards">
+		<div class="card-container">
+			<i class="fas fa-sign-in-alt icon" id="entries"></i>
+			<span class="counter" id="in"></span>
+			<div class="label"><h3>Entradas</h3></div>
+		</div>
+		<div class="card-container">
+			<i class="fas fa-sign-out-alt icon" id="exits"></i>
+			<span class="counter" id="out"></span>
+			<div class="label"><h3>Salidas</h3></div>
+		</div>
+		<div class="card-container" id="reload">
+			<div id="liveCountBtn">
+				<i class="fas fa-sync-alt icon"></i>
+			</div>
+			<!--<button type="button" class="btn btn-info" id="liveCountBtn">Actualizar</button>-->
+		</div>
+		<div class="card-container" id="info"></div>
+	</div>
+	
+	<div id="chart-container">
+		<div id="chart_div"></div>
+		<div id="chart-forms">
+			<form>
+				<div class="form-group stats">
+					<label for="period_select"></label>
+					<select class="form-control" id="period_select">
+						<option selected>Periodo</option>
+						<option value="year">Año</option>
+						<option value="month">Mes</option>
+						<option value="day">Día</option>
+					</select>
+				</div>
+			</form>
+			<form>
+				<div class="form-group stats">
+					<label for="chart_select"></label>
+					<select class="form-control" id="chart_select">
+						<option value="area">Área</option>
+						<option value="lines">Líneas</option>
+						<option value="bars" selected>Barras</option>
+					</select>
+				</div>
+			</form>
+			<form>
+				<div class="form-group stats">
+					<label for="year_select"></label>
+					<select class="form-control" id="year_select">
+						<option selected>Año</option>
+						<!-- Years dynamically inserted here -->
+					</select>
+				</div>
+			</form>
+			<form>
+				<div class="form-group stats">
+					<label for="month_select"></label>
+					<select class="form-control" id="month_select">
+						<option selected>Mes</option>
+						<!-- Months dynamically inserted here -->
+					</select>
+				</div>
+			</form>
+			<form>
+				<div class="form-group stats">
+					<label for="day_select"></label>
+					<select class="form-control" id="day_select">
+						<option selected>Día</option>
+						<!-- Days dynamically inserted here -->
+					</select>
+				</div>
+			</form>
+		</div>
+	</div>
+</main>

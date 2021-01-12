@@ -1,0 +1,67 @@
+<script src="js/reports.js"></script>
+<main class="main" id="reports">	
+	<div class="card-container">
+		<div align="center">
+			<h1>&nbsp;</h1>
+			<h1>Reportes</h1>
+		</div>
+		<p align="center">Descarga los archivos con la información de cada año, mes, y/o día que desees consultar.</p>
+		<p>&nbsp;</p>
+
+		<div class="row" align="center">
+			<div class="col-sm-3">
+				<form>
+					<div class="form-group reports">
+						<label for="period_select"><h3>Periodo</h3></label>
+						<select class="form-control" id="period_select">
+							<option value="year" selected>Año</option>
+							<option value="month">Mes</option>
+							<option value="day">Día</option>
+						</select>
+					</div>
+				</form>
+			</div>
+
+			<div class="col-sm-3">
+				<form>
+					<div class="form-group reports">
+						<label for="year_select"><h3>Año</h3></label>
+						<select class="form-control" id="year_select">
+							<option selected></option>
+							<!-- Years dynamically inserted here -->
+						</select>
+					</div>
+				</form>
+			</div>
+
+			<div class="col-sm-3">
+				<form id="month_form">
+					<div class="form-group reports">
+						<label for="month_select"><h3>Mes</h3></label>
+						<select class="form-control" id="month_select">
+							<option selected></option>
+							<!-- Months dynamically inserted here -->
+						</select>
+					</div>
+				</form>
+			</div>
+
+			<div class="col-sm-3">
+				<form id="day_form">
+					<div class="form-group reports">
+						<label for="day_select"><h3>Día</h3></label>
+						<select class="form-control" id="day_select">
+							<option selected></option>
+							<!-- Days dynamically inserted here -->
+						</select>
+					</div>
+				</form>
+			</div>
+
+		</div>
+		<div align="center">
+			<button type="button" class="btn btn-info" id="download">Descargar</button>
+			<div id="csv_download"></div>
+		</div>
+	</div>
+</main>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Contador</title>
+
+	<link rel="stylesheet" href="libs/bs/bootstrap.min.css">
+
+	<script src="libs/ajs/solid.js"></script>
+	<script src="libs/ajs/fontawesome.js"></script>
+
+	<script src="libs/jq/jquery.min.js"></script>
+	<script src="libs/bs/popper.min.js"></script>
+	<script src="libs/bs/bootstrap.min.js"></script>
+
+	<script src="libs/gc/loader.js"></script>
+
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="js/sidebar.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/utils.js"></script>
+</head>
+<body>
+
+<div class="wrapper">
+	<!-- Side Bar-->
+	<nav id="sidebar">
+		<div class="sidebar-header aligner">
+			<div>
+				<h3>Contador</h3>
+			</div>
+		</div>
+		
+		<div class="sidebar-submenus">
+			<div class="space"></div>
+			<div class="submenu-item">
+				<a href="views/dashboard.html" class="subMenu" id="nav">
+					<span class="fa fa-home"></span>
+					<span class="title">Dashboard</span>
+				</a>
+			</div>
+
+			<div class="submenu-item">
+				<a href="views/reports.html" class="subMenu" id="nav">
+					<span class="fa fa-chart-bar"></span>
+					<span class="title">Reportes</span>
+				</a>
+			</div>
+
+			<!-- Reports submenu -->
+			<!--<div class="submenu-item">
+				<a href="views/system.html" class="subMenu" id="nav">
+					<span class="fa fa-cogs"></span>
+					<span class="title">Sistema</span>
+				</a>
+			</div>--->
+
+			<!--
+			<div class="submenu-item">
+				<a href="#reportsSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+					<span class="fa fa-home"></span>
+					<span class="title">Reportes</span>
+				</a>
+				<ul class="collapse list-unstyled" id="reportsSubmenu">
+					<li><a href="#">Reportes 1</a></li>
+					<li><a href="#">Reportes 2</a></li>
+					<li><a href="#">Reportes 3</a></li>
+				</ul>
+			</div>
+			-->
+
+			<div class="submenu-item">
+				<a href="views/about.html" class="subMenu" id="nav">
+					<span class="fa fa-info-circle"></span>
+					<span class="title">Acerca de</span>
+				</a>
+			</div>
+		</div>
+	</nav>
+
+	<div id="content">
+		<!--
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+				<button type="button" id="sidebarCollapse" class="btn btn-info">
+					<i class="fas fa-align-left"></i>
+					<span>Burger Icon</span>
+				</button>
+			</div>
+		</nav>
+		-->
+		<nav class="aligner-left" id="header-container">
+			<button class="btn btn-default" id="sidebarCollapse"><i class="fa fa-bars"></i></button>
+		</nav>
+		<main id="main-body">
+			<h2>Content</h2>
+		</main>
+	</div>
+
+</div>
+
+<footer>
+	<p>Diseñado por Héctor Sánchez, IPN</p>
+</footer>
+</body>
+</html>
