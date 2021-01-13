@@ -1,0 +1,1 @@
+Este repositorio contiene los archivos relacionados con el contador de personas.
